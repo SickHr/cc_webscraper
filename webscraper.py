@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 
+import json
+
 
 class WebScraper:
 
@@ -12,7 +14,7 @@ class WebScraper:
         self.password = password
 
     def cc_login(self):
-        scraping_url = ""
+        scraping_url = json.load(open("config.json"))["scraping_url"]
         self.driver.get(scraping_url)
         sleep(1)
 
