@@ -12,7 +12,7 @@ class WebScraper:
         self.password = password
 
     def cc_login(self):
-        scraping_url = "https://de.clubcooee.com/market/itemListings/2"
+        scraping_url = ""
         self.driver.get(scraping_url)
         sleep(1)
 
